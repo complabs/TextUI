@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33C0B7EE-FE05-4D21-B2A3-6EE2A98BD1AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VRO_TestSuite</RootNamespace>
+    <AssemblyName>VideoRentalOutlet-TestSuite</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsoleWriter.cs" />
+    <Compile Include="ITestClientWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringWriter.cs" />
+    <Compile Include="TestClient_TUI.cs" />
+    <Compile Include="TestClient_VRO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library-MbkCommons\MbkCommons Library.csproj">
+      <Project>{1942D6B1-F6EC-4547-BF59-E72C7FF8585E}</Project>
+      <Name>MbkCommons Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library-TextUI\TextUserInterface Library.csproj">
+      <Project>{89B8F012-B814-4FE2-92C5-116A8BC103A5}</Project>
+      <Name>TextUserInterface Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library-VideoRentalOutlet\VideoRentalOutlet Library.csproj">
+      <Project>{45E8B34A-1883-4B6F-85D3-EDF1D63891C5}</Project>
+      <Name>VideoRentalOutlet Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45E8B34A-1883-4B6F-85D3-EDF1D63891C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VROLib</RootNamespace>
+    <AssemblyName>VideoRentalOutlet</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commons\TransactionalObject.cs" />
+    <Compile Include="Commons\GenericObjectCollection.cs" />
+    <Compile Include="CustomerDatabase\CreditCard.cs" />
+    <Compile Include="CustomerDatabase\Customer.cs" />
+    <Compile Include="CustomerDatabase\CustomerCollection.cs" />
+    <Compile Include="CustomerDatabase\PriceList.cs" />
+    <Compile Include="Commons\MonitoredObject.cs" />
+    <Compile Include="Commons\GenericObject.cs" />
+    <Compile Include="Commons\Enums.cs" />
+    <Compile Include="CustomerDatabase\MinQuantityPrice.cs" />
+    <Compile Include="ItemStore\RentedItems.cs" />
+    <Compile Include="ItemStore\MovieActor.cs" />
+    <Compile Include="ItemStore\MovieCollection.cs" />
+    <Compile Include="ItemStore\MovieExemplarCollection.cs" />
+    <Compile Include="ItemStore\Movie.cs" />
+    <Compile Include="ItemStore\MovieExemplar.cs" />
+    <Compile Include="ItemStore\RentedItem.cs" />
+    <Compile Include="VideoRentalOutlet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library-MbkCommons\MbkCommons Library.csproj">
+      <Project>{1942D6B1-F6EC-4547-BF59-E72C7FF8585E}</Project>
+      <Name>MbkCommons Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VRO-ClassDiagram1.cd" />
+    <None Include="VRO-ClassDiagram2.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

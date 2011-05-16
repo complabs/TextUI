@@ -1,0 +1,107 @@
+﻿
+┌─────────────────────────────────────────────────────────────────────────────┐
+│   1. Shortcut Keys                                                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+    Ctrl+S    Save database
+    Alt+F4    Save database and exit
+
+    F1        View (this) help
+
+    F3        Manage price list
+
+    F4        View/edit company details
+
+    F5        Browse customer database
+    Shift+F5  Find a customer
+    Ctrl+F5   Manage customer database
+
+    F6        Browse movie database
+    Shift+F6  Find a movie
+    Ctrl+F6   Manage movie database
+
+    F7        Browse rented movie exemplars
+    Shift+F7  Find a movie exemplar
+    Ctrl+F7   Manage movie exempar collection
+
+    F8        Manage movie exemplars for the current movie
+
+    F9        Manage rented items for the current customer
+    Shift+F9  Add new rental for the current customer
+
+    F11       Show database status
+
+    Ctrl+F11  Toggle trace mode (works only in debug mode)
+
+    F12       Open Sudoku puzzle
+
+    Ctrl+P    Snapshot current form into a timestamped PNG file
+
+ In list forms:
+
+    F2        Lock/unlock current data for editing.
+    Ctrl+F    Show search panel
+    Insert    Add new record (if unlocked for editing)
+    Delete    Delete current record (if unlocked for editing)
+    Enter     View or edit current record (depending on current editing mode)
+
+ In details forms:
+
+    F2        Lock/unlock current data for editing.
+    Ctrl+F    Open appropriate list form in search mode
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│   2. Forms                                                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+    There are two types of forms: 
+
+      - List Forms, and 
+      - Details Forms.
+
+    Forms may also be either in:
+
+      - locked (browsing) mode, or
+      - unlocked (editing) mode.
+
+    When a form is locked, its record(s) cannot be changed using the keyboard.
+    Use appropriate "Manage"-items from menu to start forms in editing mode.
+
+    You may also use F2 to toggle between locked/unlocked modes at any time.
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│   2.1. List Forms                                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+    F2 toggles between locked/unlocked mode.
+
+    In unlocked mode, you can use Insert/Delete keys to add/remove records.
+
+    To open search panel, press Ctrl+F. When searching, you may delimit words 
+    with spaces; for example, enter " 45 " to find records containing word 
+    "45". This slightly differs from the GUI application where '#' character 
+    is used as word delimiter.
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│   2.1. Details Forms                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+    F2 toggles between locked/unlocked mode.
+
+    To open corresponding list form and start searching, press Ctrl+F.
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│   3. How to Rent a New Item?                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+    1) Open customer list form (either Browse, Find or Manage customers)
+
+    2) Select current customer
+
+    3) Press Shift+F9
+

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TextUI.Window">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>YCTzJRDEJqvokq9eRO1tZ/RbAHoIiBAMPI8mDk8dGHA=</HashCode>
+      <FileName>Base\Window.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Form" Collapsed="true">
+    <Position X="4.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQCQAAAAAIAAAhAAQAAAAAACAIIIgAACABAAICAAAAA=</HashCode>
+      <FileName>Framework\Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.MessageBox" Collapsed="true">
+    <Position X="4.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAgAgCAAAAAQAAgBAAAAEIEIQAAAAAADAEAEIA=</HashCode>
+      <FileName>Framework\MessageBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.MainMenu" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Menus\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Menu" Collapsed="true">
+    <Position X="4.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAICABAhICAAQDCgUADAAJAFgQReiBgAICgADAKBAAA=</HashCode>
+      <FileName>Menus\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.MenuItem" Collapsed="true">
+    <Position X="6.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAICAAAAAkAACBAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Menus\MenuItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.Button" Collapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAABAAAAgA=</HashCode>
+      <FileName>Controls\Button.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.ButtonBase" Collapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAAgCAACIAQAQAAAAEAAACAAACCAAACAoAAIA=</HashCode>
+      <FileName>Controls\ButtonBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.CheckBox" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAACAQAAAAAAAAAAAAAAAAAAABAIAAAA=</HashCode>
+      <FileName>Controls\CheckBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.ComboBox" Collapsed="true">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASQAAAAiAAAAAgRAAAAIAAgAAACAAECARABAAQEAA=</HashCode>
+      <FileName>Controls\ComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.Control" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAwAIAIAAAQKAAAACAAAACAAIAAAACAAAIRAAADAA=</HashCode>
+      <FileName>Controls\Control.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.GroupBox" Collapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Controls\GroupBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.Label" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Label.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.ListBox" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\ListBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.ListBoxBase" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FTACASVhISASLBAAVEDBAUAJSBBAAQkAAQw9DBoRHLA=</HashCode>
+      <FileName>Controls\ListBoxBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.MdiForm" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAABCAAAAAIQABAAEAAAACAAAAhIIgCAAEBQAA=</HashCode>
+      <FileName>Controls\MdiForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.ProgressBar" Collapsed="true">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAACAAAAAQAAAQABAAAAAAAAAAAAAAAAgAEAAAAA=</HashCode>
+      <FileName>Controls\ProgressBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Controls.TextBox" Collapsed="true">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ByAABQMgoGQALiFJQIDVAQIMGAAAAIkCBAgKTAgBCjA=</HashCode>
+      <FileName>Controls\TextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Verdana" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89B8F012-B814-4FE2-92C5-116A8BC103A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TextUI</RootNamespace>
+    <AssemblyName>TextUserInterface</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Button.cs" />
+    <Compile Include="Controls\CheckBox.cs" />
+    <Compile Include="Controls\Control.cs" />
+    <Compile Include="Controls\ComboBox.cs" />
+    <Compile Include="Controls\ListBoxBase.cs" />
+    <Compile Include="Controls\GroupBox.cs" />
+    <Compile Include="Controls\Label.cs" />
+    <Compile Include="Controls\ProgressBar.cs" />
+    <Compile Include="Controls\ButtonBase.cs" />
+    <Compile Include="Controls\ListBox.cs" />
+    <Compile Include="Drawing\ColorContext.cs" />
+    <Compile Include="Menus\MainMenu.cs" />
+    <Compile Include="Menus\Menu.cs" />
+    <Compile Include="Menus\MenuItem.cs" />
+    <Compile Include="Menus\MenuItems.cs" />
+    <Compile Include="Framework\MessageBox.cs" />
+    <Compile Include="Controls\TextBox.cs" />
+    <Compile Include="Controls\MdiForm.cs" />
+    <Compile Include="Drawing\ClipContext.cs" />
+    <Compile Include="ConsoleIO\ConsoleKeyReader.cs" />
+    <Compile Include="Framework\Form.cs" />
+    <Compile Include="Framework\ColorTheme.cs" />
+    <Compile Include="Base\WindowDrawing.cs" />
+    <Compile Include="Base\WindowStructure.cs" />
+    <Compile Include="Base\Window.cs" />
+    <Compile Include="Base\WindowEvents.cs" />
+    <Compile Include="Base\WindowProperties.cs" />
+    <Compile Include="Framework\Events.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Framework\Application.cs" />
+    <Compile Include="Framework\DataTypes.cs" />
+    <Compile Include="ConsoleIO\ConsoleScreenWriter.cs" />
+    <Compile Include="Drawing\IScreenSynchronizer.cs" />
+    <Compile Include="Drawing\ScreenBuffer.cs" />
+    <Compile Include="Drawing\Screen.cs" />
+    <Compile Include="Base\WindowMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TUI-ClassDiagram1.cd" />
+    <None Include="TUI-ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library-MbkCommons\MbkCommons Library.csproj">
+      <Project>{1942D6B1-F6EC-4547-BF59-E72C7FF8585E}</Project>
+      <Name>MbkCommons Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

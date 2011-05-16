@@ -1,0 +1,30 @@
+﻿
+
+    Arrows         -  move cursor
+
+    Digits 1-9     -  replace digit in the square
+
+    Backspace, 0,  -  clear current square
+    Delete, Space
+
+    +, PgUp        -  increment square contents
+
+    -, PgDown      -  decrement square contents
+
+
+    S, F5          -  try to solve puzzle
+
+    C              -  clear all squares
+
+    X              -  lock/unlock current square
+
+    L              -  reload puzzle from file
+
+    I              -  load sudoku 'AI Escargot'
+
+
+    Shift+Arrows   -  move window
+
+    H, F1          -  display (this) help
+
+    Q, Esc         -  quit

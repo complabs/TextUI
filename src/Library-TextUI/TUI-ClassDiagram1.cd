@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TextUI.Window" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YCTzJRDEJqvokq9eRO1tZ/RbAHoIiBAMPI8mDk8dGHA=</HashCode>
+      <FileName>Base\Window.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Application" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAIBAAAgAEBACYBBAAIBACAAAgAQiCIQCAACEAAAI=</HashCode>
+      <FileName>Framework\Application.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Box" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAiIAShAAAABACQAQAAAQQAAgAABACIKkCAAAAAM=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.KeyEventArgs" Collapsed="true">
+    <Position X="5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAEAAAAAAgAAQAAAAAAAAAAAAQAAIAAAAAACAQ=</HashCode>
+      <FileName>Framework\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.DrawEventArgs" Collapsed="true">
+    <Position X="5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Framework\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.QuitMessageLoop" Collapsed="true">
+    <Position X="5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Framework\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.RestartMessageLoop" Collapsed="true">
+    <Position X="5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Framework\Events.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.ConsoleIO.ConsoleKeyReader" Collapsed="true">
+    <Position X="2.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QOAEGAAAADBAEABAACAAUAQAAIAAAQGAZAAAQAAAUAI=</HashCode>
+      <FileName>ConsoleIO\ConsoleKeyReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.ConsoleIO.ConsoleScreenWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQCAQKAJBAAAAAIBgIEAEQAAQIAAAgAIIACAQBBYAA=</HashCode>
+      <FileName>ConsoleIO\ConsoleScreenWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TextUI.Drawing.ClipContext" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAEAAAAACAAQABAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Drawing\ClipContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Drawing.ColorContext" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAEAAAAQCAAQAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drawing\ColorContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Drawing.Screen" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAACRBQBEAAECAJAAgAAkACQAAAEAABIIiCAQFBwAg=</HashCode>
+      <FileName>Drawing\Screen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Drawing.ScreenBuffer" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAAAABEAAkCAABAAAgkAABAEAUAAAAAgCAQBAgAg=</HashCode>
+      <FileName>Drawing\ScreenBuffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextUI.Framework.ColorTheme" Collapsed="true">
+    <Position X="2.5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABBAARFAEAAABAkAECEBJCACADAAEBgQEQERABgBABg=</HashCode>
+      <FileName>Framework\ColorTheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TextUI.Point" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAAAYAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TextUI.Size" Collapsed="true">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAEAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TextUI.Rectangle" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAEAAAAAEAAAAAIAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TextUI.AccessKey" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQggAAAAAAAAAAAQIAAAAAACAAAAiA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="TextUI.Drawing.IScreenSynchronizer" Collapsed="true">
+    <Position X="2.5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAIAAAAAAAAAAAAAAAAAAAAAgAIAAAAABAAAA=</HashCode>
+      <FileName>Drawing\IScreenSynchronizer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TextUI.Color" Collapsed="true">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAGAARBAAAAAgAEQBAAABAABAAAAAAAAAAIADAAAAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextUI.BoxLines" Collapsed="true">
+    <Position X="2.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextUI.MessageBoxButtons" Collapsed="true">
+    <Position X="4.5" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAEAAAAAAAAAAAAAAAAAASAABAAACAAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextUI.DialogResult" Collapsed="true">
+    <Position X="4.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAASAAQACBAAAAAAAAAACAAAAAAAAABAAEAAAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextUI.MessageBoxIcon" Collapsed="true">
+    <Position X="4.5" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAEAAAACAAAQAAAAAAABAAAAAAAAAAIQAAAAEAAAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextUI.MessageBoxDefaultButton" Collapsed="true">
+    <Position X="4.5" Y="8" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextUI.MdiLayout" Collapsed="true">
+    <Position X="2.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAQIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextUI.Shortcut" Collapsed="true">
+    <Position X="2.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIGAAAQBAEAEAgEAAIAAAgGLgAgAArDf4AAEA0BAA4=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextUI.Keys" Collapsed="true">
+    <Position X="2.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYKq4f9VYZAoCgQIEgEDACkUGg0UFBtKyCCA/v//YWM=</HashCode>
+      <FileName>Framework\DataTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TextUI.CtrlEventTypes" Collapsed="true">
+    <Position X="2.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAIAAAAAABAAAAQAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Framework\Events.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="TextUI.KeyEventHandler" Collapsed="true">
+    <Position X="5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Framework\Events.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="TextUI.DrawEventHandler" Collapsed="true">
+    <Position X="5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Framework\Events.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Verdana" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8172D7B1-652C-4BFB-867F-C80143D783D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VideoRentalOutlet_GUI</RootNamespace>
+    <AssemblyName>VideoRentalOutlet-GUI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseIntermediateOutputPath>obj\GUI\</BaseIntermediateOutputPath>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\GUI-Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\GUI-Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\VideoStore.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Em.cs" />
+    <Compile Include="A-GUI-Specific\MainFormGUI.cs" />
+    <Compile Include="A-GUI-Specific\SudokuGUI.cs" />
+    <Compile Include="MainForm\MainFormMdi.cs" />
+    <Compile Include="DetailsForms\RentedItemDetailsForm.cs" />
+    <Compile Include="DetailsForms\MovieExemplarDetailsForm.cs" />
+    <Compile Include="DetailsForms\MovieDetailsForm.cs" />
+    <Compile Include="ListForms\RentedItemListForm.cs" />
+    <Compile Include="MainForm\MainFormDatabase.cs" />
+    <Compile Include="DetailsForms\CompanyDetailsForm.cs" />
+    <Compile Include="GenericForms\FormBase.cs" />
+    <Compile Include="GenericForms\DetailsForm.cs" />
+    <Compile Include="DetailsForms\PriceDetailsForm.cs" />
+    <Compile Include="DetailsForms\CustomerDetailsForm.cs" />
+    <Compile Include="A-GUI-Specific\GuiExtensionMethods.cs" />
+    <Compile Include="ListForms\PriceListForm.cs" />
+    <Compile Include="ListForms\MovieExemplarListForm.cs" />
+    <Compile Include="ListForms\MovieListForm.cs" />
+    <Compile Include="ListForms\CustomerListForm.cs" />
+    <Compile Include="MainForm\MainForm.cs" />
+    <Compile Include="GenericForms\ListForm.cs" />
+    <Compile Include="MainForm\MainFormMenus.cs" />
+    <Compile Include="MyControls\MyLineSeparator.cs" />
+    <Compile Include="MyControls\FileStreamWithProgressBar.cs" />
+    <Compile Include="MyControls\MyButton.cs" />
+    <Compile Include="MyControls\MyCheckBox.cs" />
+    <Compile Include="MyControls\MyCheckBoxCollection.cs" />
+    <Compile Include="MyControls\MyComboBox.cs" />
+    <Compile Include="MyControls\MyGroupBox.cs" />
+    <Compile Include="A-GUI-Specific\MyMdiFormGUI.cs" />
+    <Compile Include="MyControls\MyLabel.cs" />
+    <Compile Include="MyControls\MyListView.cs" />
+    <Compile Include="MyControls\MyProgressBar.cs" />
+    <Compile Include="MyControls\MyReportBox.cs" />
+    <Compile Include="MyControls\MyTextBox.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo-GUI.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="App-ClassDiagram-UI.cd" />
+    <None Include="App-ClassDiagram-GUI.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AddRental16.png" />
+    <Content Include="Resources\Binoculars.ico" />
+    <Content Include="Resources\Calculator.ico" />
+    <Content Include="Resources\Calculator16.png" />
+    <Content Include="Resources\Calendar16.png" />
+    <Content Include="Resources\CalendarBlue.ico" />
+    <Content Include="Resources\Camera16.png" />
+    <Content Include="Resources\SudokuHelp.htm" />
+    <Content Include="Resources\LockEdit16.png" />
+    <Content Include="Resources\Rentals16.png" />
+    <Content Include="Resources\Return16.png" />
+    <Content Include="Resources\Delete16.png" />
+    <Content Include="Resources\Document.ico" />
+    <Content Include="Resources\DocumentAdd16.png" />
+    <Content Include="Resources\DocumentCopy16.png" />
+    <Content Include="Resources\DocumentEdit16.png" />
+    <Content Include="Resources\Edit16.png" />
+    <Content Include="Resources\EditDocument.ico" />
+    <Content Include="Resources\EmptyList.png" />
+    <Content Include="Resources\Error16.png" />
+    <Content Include="Resources\Export16.png" />
+    <Content Include="Resources\Favorite16.png" />
+    <Content Include="Resources\Folder16.png" />
+    <Content Include="Resources\FolderUp16.png" />
+    <Content Include="Resources\Hierarchy16.png" />
+    <Content Include="Resources\Hourglass16.png" />
+    <Content Include="Resources\Import16.png" />
+    <Content Include="Resources\Information16.png" />
+    <Content Include="Resources\kth-logo.png" />
+    <Content Include="Resources\LockLock16.png" />
+    <Content Include="Resources\LockUnlock16.png" />
+    <Content Include="Resources\MoveDown16.png" />
+    <Content Include="Resources\MoveLeft16.png" />
+    <Content Include="Resources\MoveRight16.png" />
+    <Content Include="Resources\MoveUp16.png" />
+    <Content Include="Resources\Movies16.png" />
+    <Content Include="Resources\Paste16.png" />
+    <Content Include="Resources\PenRed.ico" />
+    <Content Include="Resources\Redo16.png" />
+    <Content Include="Resources\Refresh16.png" />
+    <Content Include="Resources\Save16.png" />
+    <Content Include="Resources\Search16.png" />
+    <Content Include="Resources\Settings16.png" />
+    <Content Include="Resources\ShortHelp.htm" />
+    <Content Include="Resources\StepLeft16.png" />
+    <Content Include="Resources\StepRight16.png" />
+    <Content Include="Resources\Sudoku.ico" />
+    <Content Include="Resources\Table16.png" />
+    <Content Include="Resources\Undo16.png" />
+    <Content Include="Resources\VideoStore.ico" />
+    <Content Include="Resources\Gear.ico" />
+    <Content Include="Resources\VideoFolder.ico" />
+    <Content Include="Resources\UserClient.ico" />
+    <Content Include="Resources\UserClients.ico" />
+    <Content Include="Resources\VideoItem.ico" />
+    <Content Include="Resources\Warning.png" />
+    <Content Include="Resources\ZoomIn16.png" />
+    <Content Include="Resources\ZoomOut16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library-MbkCommons\MbkCommons Library.csproj">
+      <Project>{1942D6B1-F6EC-4547-BF59-E72C7FF8585E}</Project>
+      <Name>MbkCommons Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library-TestSuite\VRO-TestSuite Library.csproj">
+      <Project>{33C0B7EE-FE05-4D21-B2A3-6EE2A98BD1AE}</Project>
+      <Name>VRO-TestSuite Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library-VideoRentalOutlet\VideoRentalOutlet Library.csproj">
+      <Project>{45E8B34A-1883-4B6F-85D3-EDF1D63891C5}</Project>
+      <Name>VideoRentalOutlet Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

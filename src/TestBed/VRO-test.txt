@@ -1,0 +1,803 @@
+
+Initializing Sample Database...
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                       Dumping contents of initial empty store...                      │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+Video Rental Outlet ..: Blurry Bluray
+VAT# .................: SE554078214101
+Address ..............: Tulegatan 50
+Post Code ............: 112 54
+City .................: Solna
+Country ..............: Sweden
+Phone ................: +46(8)90510
+Home Page ............: http://www.blurrybluray.com
+E-Mail Address .......: info@blurrybluray.com
+
+       Contents:      0 customers
+                      1 price specifications
+                      0 movies
+                      0 movie exemplars
+
+======================================================================
+====                          Price List                          ====
+======================================================================
+
+_______________________ Price Specification __________________________
+Membership ...........: Not Member
+Price Class ..........: Swedish New
+Minimum Quantity .....: 1
+Price ................: 100.00
+
+======================================================================
+====                      Customer Database                       ====
+======================================================================
+
+(Empty)
+
+======================================================================
+====                   Movie Exemplar Database                    ====
+======================================================================
+
+(Empty)
+
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                                 Changing price list...                                │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added Price for Member and Older Movie, Min.Qty: 1, Fee: 10.00
+
+>>> Added Price for Gold Member and Older Movie, Min.Qty: 1, Fee: 5.00
+
+>>> Added Price for Gold Member and New Hot Movie, Min.Qty: 1, Fee: 10.00
+
+>>> Added Price for Not Member and Older Movie, Min.Qty: 3, Fee: 15.00
+
+>>> Updated Price for Not Member and Swedish New, Min.Qty: 1, Fee: 20.00
+
+======================================================================
+====                          Price List                          ====
+======================================================================
+
+_______________________ Price Specification __________________________
+Membership ...........: Gold Member
+Price Class ..........: Older Movie
+Minimum Quantity .....: 1
+Price ................: 5.00
+
+_______________________ Price Specification __________________________
+Membership ...........: Gold Member
+Price Class ..........: New Hot Movie
+Minimum Quantity .....: 1
+Price ................: 10.00
+
+_______________________ Price Specification __________________________
+Membership ...........: Member
+Price Class ..........: Older Movie
+Minimum Quantity .....: 1
+Price ................: 10.00
+
+_______________________ Price Specification __________________________
+Membership ...........: Not Member
+Price Class ..........: Older Movie
+Minimum Quantity .....: 3
+Price ................: 15.00
+
+_______________________ Price Specification __________________________
+Membership ...........: Not Member
+Price Class ..........: Swedish New
+Minimum Quantity .....: 1
+Price ................: 20.00
+
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│              Getting fees for misc Membership/PriceClass combinations...              │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+Gold Member  Older Movie       5     5.00
+Gold Member  Older Movie       1     5.00
+Gold Member  New Movie         5    10.00
+Gold Member  New Movie         1    10.00
+Gold Member  New Hot Movie     5    10.00
+Gold Member  New Hot Movie     1    10.00
+Gold Member  Swedish New       5    20.00
+Gold Member  Swedish New       1    20.00
+Member       Older Movie       5    10.00
+Member       Older Movie       1    10.00
+Member       New Movie         5    20.00
+Member       New Movie         1    20.00
+Member       New Hot Movie     5    20.00
+Member       New Hot Movie     1    20.00
+Member       Swedish New       5    20.00
+Member       Swedish New       1    20.00
+Not Member   Older Movie       5    15.00
+Not Member   Older Movie       1    20.00
+Not Member   New Movie         5    20.00
+Not Member   New Movie         1    20.00
+Not Member   New Hot Movie     5    20.00
+Not Member   New Hot Movie     1    20.00
+Not Member   Swedish New       5    20.00
+Not Member   Swedish New       1    20.00
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                          Adding Andrew Wiles as a customer...                         │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added Customer #1: Andrew Wiles, PID US 1953-05-14, No Rentals
+
+Customers:
+Customer #1: Andrew Wiles, PID US 1953-05-14, No Rentals
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                            Adding John Poe as a customer...                           │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added Customer #2: John Poe, PID 820315-1035, No Rentals
+
+Customers:
+Customer #1: Andrew Wiles, PID US 1953-05-14, No Rentals
+Customer #2: John Poe, PID 820315-1035, No Rentals
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                        Adding Linnéa Andersson as a customer...                       │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added Customer #3: Linnéa Andersson, PID 830415-2034, No Rentals
+
+Customers:
+Customer #1: Andrew Wiles, PID US 1953-05-14, No Rentals
+Customer #2: John Poe, PID 820315-1035, No Rentals
+Customer #3: Linnéa Andersson, PID 830415-2034, No Rentals
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                         Adding Richard Liboff as a customer...                        │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added Customer #4: Richard Liboff, PID 193405143415, No Rentals
+
+Customers:
+Customer #1: Andrew Wiles, PID US 1953-05-14, No Rentals
+Customer #2: John Poe, PID 820315-1035, No Rentals
+Customer #3: Linnéa Andersson, PID 830415-2034, No Rentals
+Customer #4: Richard Liboff, PID 193405143415, No Rentals
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                           Removing non-existing customer...                           │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+Customers:
+Customer #1: Andrew Wiles, PID US 1953-05-14, No Rentals
+Customer #2: John Poe, PID 820315-1035, No Rentals
+Customer #3: Linnéa Andersson, PID 830415-2034, No Rentals
+Customer #4: Richard Liboff, PID 193405143415, No Rentals
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                    Changing customer's last name 'Poe' to 'Doe'...                    │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Updated Customer #2: John Doe, PID 820315-1035, No Rentals
+
+Customers:
+Customer #1: Andrew Wiles, PID US 1953-05-14, No Rentals
+Customer #2: John Doe, PID 820315-1035, No Rentals
+Customer #3: Linnéa Andersson, PID 830415-2034, No Rentals
+Customer #4: Richard Liboff, PID 193405143415, No Rentals
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                       Removing customer with name 'John Doe'...                       │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Removed Customer #2: John Doe, PID 820315-1035, No Rentals
+
+Customers:
+Customer #1: Andrew Wiles, PID US 1953-05-14, No Rentals
+Customer #3: Linnéa Andersson, PID 830415-2034, No Rentals
+Customer #4: Richard Liboff, PID 193405143415, No Rentals
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                      Dumping contents of the customer database...                     │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+======================================================================
+====                      Customer Database                       ====
+======================================================================
+
+_______________________ Customer _____________________________________
+Customer ID ..........: 1
+First Name ...........: Andrew
+Last Name ............: Wiles
+Person-ID ............: US 1953-05-14
+Rentals ..............: 0
+Address ..............: Princeton University
+Post Code ............: 08544
+City .................: Princeton, NJ
+Country ..............: USA
+Phone ................: +1(609)789-44-44
+Cell Phone ...........: 
+E-Mail Address .......: 
+Membership ...........: Member
+Credit Card ..........: VISA: 4000-0012-3456-7899, Valid thru: 2014-12
+
+_______________________ Customer _____________________________________
+Customer ID ..........: 3
+First Name ...........: Linnéa
+Last Name ............: Andersson
+Person-ID ............: 830415-2034
+Rentals ..............: 0
+Address ..............: Ostmästargatan 12
+Post Code ............: 128 87
+City .................: Stockholm
+Country ..............: 
+Phone ................: 
+Cell Phone ...........: +46(73)45342225
+E-Mail Address .......: 
+Membership ...........: Gold Member
+
+_______________________ Customer _____________________________________
+Customer ID ..........: 4
+First Name ...........: Richard
+Last Name ............: Liboff
+Person-ID ............: 193405143415
+Rentals ..............: 0
+Address ..............: Oxvägen 44
+Post Code ............: 141 40
+City .................: Huddinge
+Country ..............: 
+Phone ................: +46(8)7798881
+Cell Phone ...........: 
+E-Mail Address .......: richard@liboff.name
+Membership ...........: Not Member
+
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│             Adding 1 VHS and 3 BluRay copies of '2001 A Space Odyssey'...             │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added Movie #1: 2001: A Space Odyssey (1968), 141 min
+
+>>> Added MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+
+>>> Updated Movie #1: 2001: A Space Odyssey (1968), 141 min (1 ex)
+
+>>> Added MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+
+>>> Updated Movie #1: 2001: A Space Odyssey (1968), 141 min (2 ex)
+
+>>> Added MovieEx #3: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+
+>>> Updated Movie #1: 2001: A Space Odyssey (1968), 141 min (3 ex)
+
+>>> Added MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+
+>>> Updated Movie #1: 2001: A Space Odyssey (1968), 141 min (4 ex)
+
+Movies:
+Movie #1: 2001: A Space Odyssey (1968), 141 min (4 ex)
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #3: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                          Adding 2 DVD copies of 'Platoon'...                          │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added Movie #2: Platoon (1986), 120 min
+
+>>> Added MovieEx #5: DVD Disc, Platoon (1986), 120 min
+
+>>> Updated Movie #2: Platoon (1986), 120 min (1 ex)
+
+>>> Added MovieEx #6: DVD Disc, Platoon (1986), 120 min
+
+>>> Updated Movie #2: Platoon (1986), 120 min (2 ex)
+
+Movies:
+Movie #1: 2001: A Space Odyssey (1968), 141 min (4 ex)
+Movie #2: Platoon (1986), 120 min (2 ex)
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #3: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                       Adding one exemplar of 'Sällskapsresan'...                      │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added Movie #3: Sällskapsresan (1980), 107 min
+
+>>> Added MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+
+>>> Updated Movie #3: Sällskapsresan (1980), 107 min (1 ex)
+
+Movies:
+Movie #1: 2001: A Space Odyssey (1968), 141 min (4 ex)
+Movie #2: Platoon (1986), 120 min (2 ex)
+Movie #3: Sällskapsresan (1980), 107 min (1 ex)
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #3: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min
+MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│              Adding 2 DVD, 1 VHS and 1 BluRay copies of 'Citizen Kane'...             │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added Movie #4: Citizen Kane (1941), 119 min
+
+>>> Added MovieEx #8: DVD Disc, Citizen Kane (1941), 119 min
+
+>>> Updated Movie #4: Citizen Kane (1941), 119 min (1 ex)
+
+>>> Added MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min
+
+>>> Updated Movie #4: Citizen Kane (1941), 119 min (2 ex)
+
+>>> Added MovieEx #10: VHS Tape, Citizen Kane (1941), 119 min
+
+>>> Updated Movie #4: Citizen Kane (1941), 119 min (3 ex)
+
+>>> Added MovieEx #11: Blu-ray Disc, Citizen Kane (1941), 119 min
+
+>>> Updated Movie #4: Citizen Kane (1941), 119 min (4 ex)
+
+Movies:
+Movie #1: 2001: A Space Odyssey (1968), 141 min (4 ex)
+Movie #2: Platoon (1986), 120 min (2 ex)
+Movie #3: Sällskapsresan (1980), 107 min (1 ex)
+Movie #4: Citizen Kane (1941), 119 min (4 ex)
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #3: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min
+MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+MovieEx #8: DVD Disc, Citizen Kane (1941), 119 min
+MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min
+MovieEx #10: VHS Tape, Citizen Kane (1941), 119 min
+MovieEx #11: Blu-ray Disc, Citizen Kane (1941), 119 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                      Removing exemplar with ID #3 from library...                     │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Removed MovieEx #3: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+
+>>> Updated Movie #1: 2001: A Space Odyssey (1968), 141 min (3 ex)
+
+Movies:
+Movie #1: 2001: A Space Odyssey (1968), 141 min (3 ex)
+Movie #2: Platoon (1986), 120 min (2 ex)
+Movie #3: Sällskapsresan (1980), 107 min (1 ex)
+Movie #4: Citizen Kane (1941), 119 min (4 ex)
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min
+MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+MovieEx #8: DVD Disc, Citizen Kane (1941), 119 min
+MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min
+MovieEx #10: VHS Tape, Citizen Kane (1941), 119 min
+MovieEx #11: Blu-ray Disc, Citizen Kane (1941), 119 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                      Removing exemplar with ID #8 from library...                     │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Removed MovieEx #8: DVD Disc, Citizen Kane (1941), 119 min
+
+>>> Updated Movie #4: Citizen Kane (1941), 119 min (3 ex)
+
+Movies:
+Movie #1: 2001: A Space Odyssey (1968), 141 min (3 ex)
+Movie #2: Platoon (1986), 120 min (2 ex)
+Movie #3: Sällskapsresan (1980), 107 min (1 ex)
+Movie #4: Citizen Kane (1941), 119 min (3 ex)
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min
+MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min
+MovieEx #10: VHS Tape, Citizen Kane (1941), 119 min
+MovieEx #11: Blu-ray Disc, Citizen Kane (1941), 119 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│               Renting out movie exemplar #4 to user with PID 830415-2034              │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added MovieEx #4, Rented by Customer #3, Due Date: 2011-05-18, Rental Fee: 15.00
+
+>>> Updated Customer #3: Linnéa Andersson, PID 830415-2034, Rentals 1
+
+>>> Updated MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min, Due: 2011-05-18
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min, Due: 2011-05-18
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min
+MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min
+MovieEx #10: VHS Tape, Citizen Kane (1941), 119 min
+MovieEx #11: Blu-ray Disc, Citizen Kane (1941), 119 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│               Renting out movie ex #6 to user with first name Andrew...               │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added MovieEx #6, Rented by Customer #1, Due Date: 2011-05-19, Rental Fee: 20.00
+
+>>> Updated Customer #1: Andrew Wiles, PID US 1953-05-14, Rentals 1
+
+>>> Updated MovieEx #6: DVD Disc, Platoon (1986), 120 min, Due: 2011-05-19
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min, Due: 2011-05-18
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min, Due: 2011-05-19
+MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min
+MovieEx #10: VHS Tape, Citizen Kane (1941), 119 min
+MovieEx #11: Blu-ray Disc, Citizen Kane (1941), 119 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                         Returning exemplar #4 from renting...                         │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Removed MovieEx #4, Rented by Customer #3, Due Date: 2011-05-18, Rental Fee: 15.00
+
+>>> Updated Customer #3: Linnéa Andersson, PID 830415-2034, No Rentals
+
+>>> Updated MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min, Due: 2011-05-19
+MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min
+MovieEx #10: VHS Tape, Citizen Kane (1941), 119 min
+MovieEx #11: Blu-ray Disc, Citizen Kane (1941), 119 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                  Renting out movie exemplar #2 to user with ID #1...                  │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added MovieEx #2, Rented by Customer #1, Due Date: 2011-05-17, Rental Fee: 15.00
+
+>>> Updated Customer #1: Andrew Wiles, PID US 1953-05-14, Rentals 2
+
+>>> Updated MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min, Due: 2011-05-17
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min, Due: 2011-05-17
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min, Due: 2011-05-19
+MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min
+MovieEx #10: VHS Tape, Citizen Kane (1941), 119 min
+MovieEx #11: Blu-ray Disc, Citizen Kane (1941), 119 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                  Renting out movie exemplar #9 to user with ID #3...                  │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+>>> Added MovieEx #9, Rented by Customer #3, Due Date: 2011-05-17, Rental Fee: 15.00
+
+>>> Updated Customer #3: Linnéa Andersson, PID 830415-2034, Rentals 1
+
+>>> Updated MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min, Due: 2011-05-17
+
+Movie Exemplars:
+MovieEx #1: VHS Tape, 2001: A Space Odyssey (1968), 141 min
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min, Due: 2011-05-17
+MovieEx #4: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+MovieEx #5: DVD Disc, Platoon (1986), 120 min
+MovieEx #6: DVD Disc, Platoon (1986), 120 min, Due: 2011-05-19
+MovieEx #7: Blu-ray Disc, Sällskapsresan (1980), 107 min
+MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min, Due: 2011-05-17
+MovieEx #10: VHS Tape, Citizen Kane (1941), 119 min
+MovieEx #11: Blu-ray Disc, Citizen Kane (1941), 119 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│             LINQ: Listing all rented items using LINQ and yield return...             │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+Total 3 rented items:
+
+MovieEx #6, Rented by Customer #1, Due Date: 2011-05-19, Rental Fee: 20.00
+
+    MovieEx #6: DVD Disc, Platoon (1986), 120 min, Due: 2011-05-19
+    Customer #1: Andrew Wiles, PID US 1953-05-14, Rentals 2
+
+MovieEx #2, Rented by Customer #1, Due Date: 2011-05-17, Rental Fee: 15.00
+
+    MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min, Due: 2011-05-17
+    Customer #1: Andrew Wiles, PID US 1953-05-14, Rentals 2
+
+MovieEx #9, Rented by Customer #3, Due Date: 2011-05-17, Rental Fee: 15.00
+
+    MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min, Due: 2011-05-17
+    Customer #3: Linnéa Andersson, PID 830415-2034, Rentals 1
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                    LINQ: Querying movies having 'odys' in title...                    │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+Selected 1 movies:
+2001: A Space Odyssey (1968), 141 min
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                           Dumping final movie collection...                           │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+======================================================================
+====                        Movie Database                        ====
+======================================================================
+
+_______________________ Movie ________________________________________
+Movie ID .............: 1
+Title ................: 2001: A Space Odyssey
+Movie Exemplars ......: 3
+Country ..............: UK | US
+Language .............: English | Russian (only few words)
+PG Rate ..............: 11 (Sweden)
+Genre ................: Adventure | Mystery | Sci-Fi
+First Release ........: 1968-04-02
+Duration .............: 141 min (2h 21')
+Director .............: Stanley Kubrick
+Writers ..............: Stanley Kubrick, Arthur C Clarke
+Actors ...............: Keir Dullea as Dr Dave Bowman
+                        Gary Lockwood as Dr Frank Poole
+                        William Sylves as Dr Heywood R Floyd
+                        Douglas Rain as HAL 9000 (voice)
+
+_______________________ Movie ________________________________________
+Movie ID .............: 2
+Title ................: Platoon
+Movie Exemplars ......: 2
+Country ..............: UK | US
+Language .............: English | Vietnamese
+PG Rate ..............: 15 (Sweden)
+Genre ................: Action | Drama | War
+First Release ........: 1986-12-19
+Duration .............: 120 min (2h)
+Director .............: Oliver Stone
+Writer ...............: Oliver Stone
+Actors ...............: Charlie Sheen as Chris
+                        Tom Berenger as Sgt. Barnes
+                        Willem Dafoe as Sgt. Elias
+
+_______________________ Movie ________________________________________
+Movie ID .............: 3
+Title ................: Sällskapsresan
+Movie Exemplars ......: 1
+Country ..............: Sweden
+Language .............: Swedish | Norwegian | Spanish
+PG Rate ..............: 
+Genre ................: Unclassified
+First Release ........: 1980-08-22
+Duration .............: 107 min (1h 47')
+Directors ............: Lasse Åberg, Peter Hald
+Writers ..............: Bo Jönsson, Lasse Åberg
+Actors ...............: Lasse Åberg as Stig-Helmer Olsson
+                        Lottie Ejebrant as Maj-Britt Lindberg
+                        Jon Skolmen as Ole Bramserud
+
+_______________________ Movie ________________________________________
+Movie ID .............: 4
+Title ................: Citizen Kane
+Movie Exemplars ......: 3
+Country ..............: USA
+Language .............: English
+PG Rate ..............: 15 (Sweden)
+Genre ................: Drama | Mystery
+First Release ........: 1941-05-01
+Duration .............: 119 min (1h 59')
+Director .............: Orson Welles
+Writers ..............: Herman J. Mankiewicz, Orson Welles
+Actors ...............: Orson Welles as Kane
+                        Joseph Cotten as Jedediah Leland
+                        Dorothy Comingore as Susan A Kane
+
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                       Dumping final movie exemplar collection...                      │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+======================================================================
+====                   Movie Exemplar Database                    ====
+======================================================================
+
+Number of exemplars: 9, Rented exemplars: 3
+
+_______________________ Movie Exemplar _______________________________
+Exemplar ID ..........: 1
+Media ................: VHS Tape
+Movie ................: 2001: A Space Odyssey (1968), 141 min
+ISAN .................: ASIN:B00000J2KZ
+Subtitles ............: 
+Image Format .........: NTSC 4:3
+Features .............: Turner Home Ent
+Released .............: 1999-06-29
+Price Class ..........: Older Movie
+
+_______________________ Movie Exemplar _______________________________
+Exemplar ID ..........: 2
+Media ................: Blu-ray Disc
+Movie ................: 2001: A Space Odyssey (1968), 141 min
+ISAN .................: ASIN:B000Q66J1M
+Subtitles ............: English | Spanish | French
+Image Format .........: 2.20:1
+Features .............: All Regions
+Released .............: 2007-10-23
+Price Class ..........: New Movie
+
+  Rental Information:
+    Rented to ........: Customer #1: Andrew Wiles, PID US 1953-05-14, Rentals 2
+    Conditions .......: Due Date: 2011-05-17, Rental Fee: 15.00
+
+_______________________ Movie Exemplar _______________________________
+Exemplar ID ..........: 4
+Media ................: Blu-ray Disc
+Movie ................: 2001: A Space Odyssey (1968), 141 min
+ISAN .................: ASIN:B000Q66J1M
+Subtitles ............: English | Spanish | French
+Image Format .........: 2.20:1
+Features .............: All Regions
+Released .............: 2007-10-23
+Price Class ..........: New Movie
+
+_______________________ Movie Exemplar _______________________________
+Exemplar ID ..........: 5
+Media ................: DVD Disc
+Movie ................: Platoon (1986), 120 min
+ISAN .................: ASIN:B00005AUJQ
+Subtitles ............: Spanish | French
+Image Format .........: Anamorphic, 1.85:1
+Features .............: Special Edition | MGM
+Released .............: 2001-06-05
+Price Class ..........: Older Movie
+
+_______________________ Movie Exemplar _______________________________
+Exemplar ID ..........: 6
+Media ................: DVD Disc
+Movie ................: Platoon (1986), 120 min
+ISAN .................: ASIN:B00005AUJQ
+Subtitles ............: Spanish | French
+Image Format .........: Anamorphic, 1.85:1
+Features .............: Special Edition | MGM
+Released .............: 2001-06-05
+Price Class ..........: Older Movie
+
+  Rental Information:
+    Rented to ........: Customer #1: Andrew Wiles, PID US 1953-05-14, Rentals 2
+    Conditions .......: Due Date: 2011-05-19, Rental Fee: 20.00
+
+_______________________ Movie Exemplar _______________________________
+Exemplar ID ..........: 7
+Media ................: Blu-ray Disc
+Movie ................: Sällskapsresan (1980), 107 min
+ISAN .................: ASIN:B003TLJY1I
+Subtitles ............: Swedish | Norwegian
+Image Format .........: Widescreen (1.78:1)
+Features .............: SF(Fox) | Region 2
+Released .............: 2001-06-05
+Price Class ..........: Older Movie
+
+_______________________ Movie Exemplar _______________________________
+Exemplar ID ..........: 9
+Media ................: DVD Disc
+Movie ................: Citizen Kane (1941), 119 min
+ISAN .................: ASIN:B00003CX9E
+Subtitles ............: English | French | Portuguese | Spanish 
+Image Format .........: B&W, 1.33:1, NTSC
+Features .............: Turner Home Ent | 2 discs
+Released .............: 2001-09-25
+Price Class ..........: Older Movie
+
+  Rental Information:
+    Rented to ........: Customer #3: Linnéa Andersson, PID 830415-2034, Rentals 1
+    Conditions .......: Due Date: 2011-05-17, Rental Fee: 15.00
+
+_______________________ Movie Exemplar _______________________________
+Exemplar ID ..........: 10
+Media ................: VHS Tape
+Movie ................: Citizen Kane (1941), 119 min
+ISAN .................: ASIN:6304119046
+Subtitles ............: 
+Image Format .........: B&W, 1.33:1, NTSC
+Features .............: RKO Radio Pictures | Special Edition
+Released .............: 1996-08-13
+Price Class ..........: Older Movie
+
+_______________________ Movie Exemplar _______________________________
+Exemplar ID ..........: 11
+Media ................: Blu-ray Disc
+Movie ................: Citizen Kane (1941), 119 min
+ISAN .................: ASIN:B001PIHH5M
+Subtitles ............: English | French | Portuguese | Spanish 
+Image Format .........: B&W, 1.33:1, NTSC
+Features .............: Warner
+Price Class ..........: Older Movie
+
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                       Dumping all customers with rented items...                      │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+===========================
+Customers with rented items
+===========================
+
+Customer #1: Andrew Wiles, PID US 1953-05-14, Rentals 2, rents 2 items:
+
+   1. Exemplar #6: DVD Disc, Platoon (1986), 120 min
+      MovieEx #6, Rented by Customer #1, Due Date: 2011-05-19, Rental Fee: 20.00
+
+   2. Exemplar #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min
+      MovieEx #2, Rented by Customer #1, Due Date: 2011-05-17, Rental Fee: 15.00
+
+Customer #3: Linnéa Andersson, PID 830415-2034, Rentals 1, rents 1 items:
+
+   1. Exemplar #9: DVD Disc, Citizen Kane (1941), 119 min
+      MovieEx #9, Rented by Customer #3, Due Date: 2011-05-17, Rental Fee: 15.00
+
+*** Customer Count = 2, Total Rented Item Count = 3 ***
+
+
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                              Dumping all rented items...                              │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+======================
+Currently rented items
+======================
+
+MovieEx #2: Blu-ray Disc, 2001: A Space Odyssey (1968), 141 min, Due: 2011-05-17
+
+    Rented to ........: Customer #1: Andrew Wiles, PID US 1953-05-14, Rentals 2
+    Conditions .......: Due Date: 2011-05-17, Rental Fee: 15.00
+
+MovieEx #6: DVD Disc, Platoon (1986), 120 min, Due: 2011-05-19
+
+    Rented to ........: Customer #1: Andrew Wiles, PID US 1953-05-14, Rentals 2
+    Conditions .......: Due Date: 2011-05-19, Rental Fee: 20.00
+
+MovieEx #9: DVD Disc, Citizen Kane (1941), 119 min, Due: 2011-05-17
+
+    Rented to ........: Customer #3: Linnéa Andersson, PID 830415-2034, Rentals 1
+    Conditions .......: Due Date: 2011-05-17, Rental Fee: 15.00
+
+*** Rented Item Count = 3 ***
+

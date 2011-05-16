@@ -1,0 +1,167 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Video Rental Outlet - Help</title>
+    <style type="text/css">
+      body 
+      { 
+          background-color: #FFFFF5;
+          font-family: "Times New Roman", Serif; font-size: 11pt;
+          }
+      h1 
+      { 
+          font-family: Arial, Sans-Serif; font-weight: bold; font-size: 15pt;
+          color: #000080;
+          padding-left: 0em;
+          }
+      h2
+      {
+          font-family: Arial, Sans-Serif; font-weight: bold; font-size: 12.5pt;
+          color: #800000;
+          border-left-style: solid; 
+          border-left-width: 3;
+          border-left-color: #E0E0C0;
+          background-color: #FFFFE0;
+          padding-top: 0.2em;
+          padding-left: 0.8em;
+          padding-bottom: 0.2em;
+          }
+      h3
+      {
+          font-family: Arial, Sans-Serif; font-weight: bold; font-size: 11pt;
+          color: #800000;
+          padding-left: 0em;
+          margin-bottom: 0.5em;
+          }
+      p
+      {
+          padding-left: 1em;
+          margin-top: 0em;
+          margin-bottom: 0.5em;
+          }
+      ol
+      {
+          padding-left: 0em;
+          }
+      ul
+      {
+          padding-left: 1em;
+          }
+      .tkey
+      {
+          font-family: "Courier New", Monospace;
+          padding-left: 1em; padding-right: 3em;
+          font-size: 11pt;
+          }
+      .tvalue
+      {
+          font-family: "Times New Roman", Serif;
+          font-size: 11pt;
+          }
+    </style>
+	</head>
+	<body>
+	  <h1>Video Rental Outlet - Short Help</h1>
+    <h2>Shortcut Keys</h2>
+    <table>
+      <tr><td class='tkey'>Ctrl+S  </td><td class='tvalue'>Save database</td></tr>
+      <tr><td class='tkey'>Alt+F4  </td><td class='tvalue'>Save database and exit</td></tr>
+
+      <tr><td class='tkey'>F1      </td><td class='tvalue'>View (this) help</td></tr>
+
+      <tr><td class='tkey'>F3      </td><td class='tvalue'>Manage price list</td></tr>
+
+      <tr><td class='tkey'>F4      </td><td class='tvalue'>View/edit company details</td></tr>
+
+      <tr><td class='tkey'>F5      </td><td class='tvalue'>Browse customer database</td></tr>
+      <tr><td class='tkey'>Shift+F5</td><td class='tvalue'>Find a customer</td></tr>
+      <tr><td class='tkey'>Ctrl+F5 </td><td class='tvalue'>Manage customer database</td></tr>
+
+      <tr><td class='tkey'>F6      </td><td class='tvalue'>Browse movie database</td></tr>
+      <tr><td class='tkey'>Shift+F6</td><td class='tvalue'>Find a movie</td></tr>
+      <tr><td class='tkey'>Ctrl+F6 </td><td class='tvalue'>Manage movie database</td></tr>
+
+      <tr><td class='tkey'>F7      </td><td class='tvalue'>Browse rented movie exemplars</td></tr>
+      <tr><td class='tkey'>Shift+F7</td><td class='tvalue'>Find a movie exemplar</td></tr>
+      <tr><td class='tkey'>Ctrl+F7 </td><td class='tvalue'>Manage movie exempar collection</td></tr>
+
+      <tr><td class='tkey'>F8      </td><td class='tvalue'>Manage movie exemplars for the current movie</td></tr>
+
+      <tr><td class='tkey'>F9      </td><td class='tvalue'>Manage rented items for the current customer</td></tr>
+      <tr><td class='tkey'>Shift+F9</td><td class='tvalue'>Add new rental for the current customer</td></tr>
+
+      <tr><td class='tkey'>F11     </td><td class='tvalue'>Show database status</td></tr>
+
+      <tr><td class='tkey'>Ctrl+F11</td><td class='tvalue'>Toggle trace mode (works only in debug mode)</td></tr>
+
+      <tr><td class='tkey'>F12     </td><td class='tvalue'>Open Sudoku puzzle</td></tr>
+
+      <tr><td class='tkey'>Ctrl+P  </td><td class='tvalue'>Snapshot current form into a timestamped PNG file</td></tr>
+
+      <tr><td colspan='2'>In list forms:</td></tr>
+
+      <tr><td class='tkey'>F2      </td><td class='tvalue'>Lock/unlock current data for editing.</td></tr>
+      <tr><td class='tkey'>Ctrl+F  </td><td class='tvalue'>Show search panel</td></tr>
+      <tr><td class='tkey'>Insert  </td><td class='tvalue'>Add new record (if unlocked for editing)</td></tr>
+      <tr><td class='tkey'>Delete  </td><td class='tvalue'>Delete current record (if unlocked for editing)</td></tr>
+      <tr><td class='tkey'>Enter   </td><td class='tvalue'>View or edit current record (depending on current editing mode)</td></tr>
+
+      <tr><td colspan='2'>In details forms:</td></tr>
+
+      <tr><td class='tkey'>F2      </td><td class='tvalue'>Lock/unlock current data for editing.</td></tr>
+      <tr><td class='tkey'>Ctrl+F  </td><td class='tvalue'>Open appropriate list form in search mode</td></tr>
+    </table>
+
+    <h2>Forms</h2>
+    <p>
+      There are two types of forms: 
+    </p>
+    <ul>
+      <li><strong>List Forms</strong>, and </li>
+      <li><strong>Details Forms</strong>.</li>
+    </ul>
+    <p>
+      Forms may also be either:
+    </p>
+    <ul>
+      <li><strong>locked</strong> &ndash; in browsing mode, or</li>
+      <li><strong>unlocked</strong> &ndash; in editing mode.</li>
+    </ul>
+    <p>
+      When a form is locked, its record(s) cannot be changed using the keyboard.
+      Use appropriate "Manage"-items from menu to start forms in editing mode.
+      You may also use <code>F2</code> to toggle between locked/unlocked modes at any time.
+    </p>
+
+    <h3>In List Forms...</h3>
+    <p>
+      <code>F2</code> toggles between locked/unlocked mode.
+    </p>
+    <p>
+      In unlocked mode, you can use <code>Insert/Delete</code> keys to add/remove records.
+    </p>
+    <p>
+      To open search panel press <code>Ctrl+F</code>. When searching, you may delimit 
+      words with character <code>'#'</code> spaces; for example, enter <code>#45#</code> 
+      to find records containing word <em>45</em>. This 
+      slightly differs from the TextUI application where character <code>Space</code>
+      is used as a word delimiter.
+    </p>
+
+    <h3>In Details Forms...</h3>
+    <p>
+      <code>F2</code> toggles between locked/unlocked mode.
+    </p>
+    <p>
+      To open corresponding list form and start searching, press Ctrl+F.
+    </p>
+
+    <h2>How to Rent a New Item?</h2>
+    <ol>
+      <li>Open customer list form (either Browse, Find or Manage customers)</li>
+      <li>Select current customer</li>
+      <li>Press <code>Shift+F9</code></li>
+    </ol>
+
+	</body>
+</html>

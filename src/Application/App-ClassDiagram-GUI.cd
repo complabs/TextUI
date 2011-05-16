@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GuiExtensionMethods" Collapsed="true">
+    <Position X="2.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>A-GUI-Specific\GuiExtensionMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainForm" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IALAAiyAMKABMQEBBAjFFhgAAAmYdEACCiIQICUYIA0=</HashCode>
+      <FileName>A-GUI-Specific\MainFormGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyMdiForm" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CQgAAQHAACgCGmAAAgAEAAgCQCIAAAACCIAIAAAIQAA=</HashCode>
+      <FileName>A-GUI-Specific\MyMdiFormGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Em" Collapsed="true">
+    <Position X="2.75" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAIAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Em.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DetailsForm&lt;TM, T&gt;" Collapsed="true">
+    <Position X="2.75" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAIhgQAUqAUARohBgCIAKBAFCAAfAAEAaAQhCI=</HashCode>
+      <FileName>GenericForms\DetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FormBase" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQIAQUCEIAGEJAoAQEKAAAAAAAGCAAJAAAQgIA=</HashCode>
+      <FileName>GenericForms\FormBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListForm&lt;TC, T&gt;" Collapsed="true">
+    <Position X="2.75" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>PCIQgAAIoAAIUIIB8BIhcEEKAjIAFAAKogRIQUgSgEM=</HashCode>
+      <FileName>GenericForms\ListForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FileStreamWithProgressBar" Collapsed="true">
+    <Position X="5.5" Y="8" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAQACIIAAAAAACAAAAoAEAqAUAgAAgAAAEAAAA=</HashCode>
+      <FileName>MyControls\FileStreamWithProgressBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyButton" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>MyControls\MyButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyCheckBox" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAACAAAAAAAAAAAQAAAAAAAAAAAIQAAACQA=</HashCode>
+      <FileName>MyControls\MyCheckBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyCheckBoxCollection" Collapsed="true">
+    <Position X="5.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAIAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyControls\MyCheckBoxCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyComboBox" Collapsed="true">
+    <Position X="5.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAIAAAAAAAAAAECAAAAAwAMACAAAAAQIQAAACAA=</HashCode>
+      <FileName>MyControls\MyComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyGroupBox" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyControls\MyGroupBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyLabel" Collapsed="true">
+    <Position X="5.5" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyControls\MyLabel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyLineSeparator">
+    <Position X="5.5" Y="8.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyControls\MyLineSeparator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyListView" Collapsed="true">
+    <Position X="5.5" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAMBIAACABEAAACAAUAQQABAAQCACAQwAhAAAyA=</HashCode>
+      <FileName>MyControls\MyListView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyProgressBar" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>gAACAACAAAgCAAAAAQAAAAAAAAAAAAAAAAAgAAAAAQA=</HashCode>
+      <FileName>MyControls\MyProgressBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyReportBox" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>MyControls\MyReportBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTextBox" Collapsed="true">
+    <Position X="5.5" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAgAAAAAAAIKAAAMAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>MyControls\MyTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAFAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoRentalOutlet_GUI.Properties.Resources" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>MIBMAoBFAAQBIIAgiDiHkBAwgYAVBgALGOBRAAOAKbA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoRentalOutlet_GUI.Properties.Settings" Collapsed="true">
+    <Position X="2.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAEAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Settings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Verdana" Size="9" />
+</ClassDiagram>

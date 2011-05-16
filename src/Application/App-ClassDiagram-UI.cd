@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CompanyDetailsForm" Collapsed="true">
+    <Position X="6.75" Y="2.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAQAEIAgABAQCAAAAAIAAAAiAAABAAAAAMA=</HashCode>
+      <FileName>DetailsForms\CompanyDetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomerDetailsForm" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAARAEIAgAABACAEAAAJAAAAiAAABCgAAAIA=</HashCode>
+      <FileName>DetailsForms\CustomerDetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieDetailsForm" Collapsed="true">
+    <Position X="6.75" Y="4.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>EAAQAAIAAAQQEZhAAIAAACACAAAAAAACAAADBAAEAIA=</HashCode>
+      <FileName>DetailsForms\MovieDetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieExemplarDetailsForm" Collapsed="true">
+    <Position X="6.75" Y="5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAARQAEIEAAAAhAEABAQAAAAAAAAABFAQBAIA=</HashCode>
+      <FileName>DetailsForms\MovieExemplarDetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceDetailsForm" Collapsed="true">
+    <Position X="6.75" Y="6.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAggAAAAQAEIAAABBgAAAAAEAAAEAAAAABAAABAIA=</HashCode>
+      <FileName>DetailsForms\PriceDetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentedItemDetailsForm" Collapsed="true">
+    <Position X="6.75" Y="5.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AQEBAgAEAAQAEIAAABAgAAAgAAACAAACAAABAAAAIIA=</HashCode>
+      <FileName>DetailsForms\RentedItemDetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DetailsForm&lt;TM, T&gt;" Collapsed="true">
+    <Position X="5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAIhgQAUqAUARohBgCIAKBAFCAAfAAEAaAQhCI=</HashCode>
+      <FileName>GenericForms\DetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FormBase" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQIAQUCEIAGEJAoAQEKAAAAAAAGCAAJAAAQgIA=</HashCode>
+      <FileName>GenericForms\FormBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListForm&lt;TC, T&gt;" Collapsed="true">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>PCIQgAAIoAAIUIIB8BIhcEEKAjIAFAAKogRIQUgSgEM=</HashCode>
+      <FileName>GenericForms\ListForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CustomerListForm" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAIAAAAAAAgAAAEACgIA=</HashCode>
+      <FileName>ListForms\CustomerListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieExemplarListForm" Collapsed="true">
+    <Position X="2.25" Y="5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAIBAAAAABAQAAAAAAAAAAAEACAII=</HashCode>
+      <FileName>ListForms\MovieExemplarListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovieListForm" Collapsed="true">
+    <Position X="2.25" Y="4.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAACAAAgAAAEACgIA=</HashCode>
+      <FileName>ListForms\MovieListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriceListForm" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAEACAIA=</HashCode>
+      <FileName>ListForms\PriceListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentedItemListForm" Collapsed="true">
+    <Position X="2.25" Y="5.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAAAAAAAAAAAIBAAAAAAAQAAAAAAAAAAAEACAIA=</HashCode>
+      <FileName>ListForms\RentedItemListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Verdana" Size="9" />
+</ClassDiagram>

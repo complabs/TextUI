@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{130A5FAD-78A2-4B01-9D7F-5F378338A55F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VideoRentalOutlet_TUI</RootNamespace>
+    <AssemblyName>VideoRentalOutlet-Console</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <BaseIntermediateOutputPath>obj\TUI\</BaseIntermediateOutputPath>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Console-Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;TEXTUI</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Console-Release\</OutputPath>
+    <DefineConstants>TRACE;TEXTUI</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A-TextUI-Specific\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Em.cs" />
+    <Compile Include="GenericForms\FormBase.cs" />
+    <Compile Include="A-TextUI-Specific\MainFormTextUI.cs" />
+    <Compile Include="MyControls\MyGroupBox.cs" />
+    <Compile Include="A-TextUI-Specific\MyMdiFormTextUI.cs" />
+    <Compile Include="MyControls\MyProgressBar.cs" />
+    <Compile Include="MyControls\MyButton.cs" />
+    <Compile Include="MyControls\MyCheckBox.cs" />
+    <Compile Include="MyControls\MyListView.cs" />
+    <Compile Include="MyControls\MyComboBox.cs" />
+    <Compile Include="MyControls\MyLabel.cs" />
+    <Compile Include="MyControls\MyTextBox.cs" />
+    <Compile Include="MyControls\MyCheckBoxCollection.cs" />
+    <Compile Include="MyControls\FileStreamWithProgressBar.cs" />
+    <Compile Include="MyControls\MyReportBox.cs" />
+    <Compile Include="MainForm\MainFormMdi.cs" />
+    <Compile Include="DetailsForms\RentedItemDetailsForm.cs" />
+    <Compile Include="DetailsForms\MovieExemplarDetailsForm.cs" />
+    <Compile Include="DetailsForms\MovieDetailsForm.cs" />
+    <Compile Include="ListForms\RentedItemListForm.cs" />
+    <Compile Include="MainForm\MainFormDatabase.cs" />
+    <Compile Include="DetailsForms\CompanyDetailsForm.cs" />
+    <Compile Include="GenericForms\DetailsForm.cs" />
+    <Compile Include="DetailsForms\PriceDetailsForm.cs" />
+    <Compile Include="DetailsForms\CustomerDetailsForm.cs" />
+    <Compile Include="ListForms\PriceListForm.cs" />
+    <Compile Include="ListForms\MovieExemplarListForm.cs" />
+    <Compile Include="ListForms\MovieListForm.cs" />
+    <Compile Include="ListForms\CustomerListForm.cs" />
+    <Compile Include="MainForm\MainForm.cs" />
+    <Compile Include="GenericForms\ListForm.cs" />
+    <Compile Include="MainForm\MainFormMenus.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo-TextUI.cs" />
+    <Compile Include="A-TextUI-Specific\SudokuTUI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library-MbkCommons\MbkCommons Library.csproj">
+      <Project>{1942D6B1-F6EC-4547-BF59-E72C7FF8585E}</Project>
+      <Name>MbkCommons Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library-TestSuite\VRO-TestSuite Library.csproj">
+      <Project>{33C0B7EE-FE05-4D21-B2A3-6EE2A98BD1AE}</Project>
+      <Name>VRO-TestSuite Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library-TextUI\TextUserInterface Library.csproj">
+      <Project>{89B8F012-B814-4FE2-92C5-116A8BC103A5}</Project>
+      <Name>TextUserInterface Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library-VideoRentalOutlet\VideoRentalOutlet Library.csproj">
+      <Project>{45E8B34A-1883-4B6F-85D3-EDF1D63891C5}</Project>
+      <Name>VideoRentalOutlet Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="A-TextUI-Specific\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="A-TextUI-Specific\SudokuHelp.txt" />
+    <Content Include="A-TextUI-Specific\ShortHelp.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App-ClassDiagram-TUI.cd" />
+    <None Include="App-ClassDiagram-UI.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
